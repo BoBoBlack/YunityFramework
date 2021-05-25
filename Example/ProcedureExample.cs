@@ -6,7 +6,7 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 namespace GameFrameworkExample
 {
     public class ProcedureExample : ProcedureBase
-    {
+    { 
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
             base.OnEnter(procedureOwner);

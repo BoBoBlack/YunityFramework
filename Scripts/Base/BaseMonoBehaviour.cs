@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// »ù´¡MonoÀà
+/// </summary>
 public class BaseMonoBehaviour : MonoBehaviour
 {
     private void Awake()
