@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// ÊÂ¼şÏûÏ¢¿ØÖÆÀà
+/// äº‹ä»¶æ¶ˆæ¯æ§åˆ¶ç±»
 /// </summary>
 public class TaskEventManager : QSingleton<TaskEventManager>
 {
-    public delegate void TaskEventDel(int eventTypeId, TaskEventArgs e);         // Î¯ÍĞ¾ä±ú
+    public delegate void TaskEventDel(int eventTypeId, TaskEventArgs e);         // å§”æ‰˜å¥æŸ„
 
     private Dictionary<int, List<TaskEventDel>> eventDic = new Dictionary<int, List<TaskEventDel>>();
 
     /// <summary>
-    /// ×¢²á¼àÌıÊÂ¼ş
+    /// æ³¨å†Œç›‘å¬äº‹ä»¶
     /// </summary>
     /// <param name="eventType"></param>
     /// <param name="eventDel"></param>
@@ -25,7 +25,7 @@ public class TaskEventManager : QSingleton<TaskEventManager>
         }
     }
     /// <summary>
-    /// ½â³ı¼àÌıÊÂ¼ş
+    /// è§£é™¤ç›‘å¬äº‹ä»¶
     /// </summary>
     /// <param name="eventType"></param>
     /// <param name="eventDel"></param>
@@ -35,7 +35,7 @@ public class TaskEventManager : QSingleton<TaskEventManager>
             eventDic[eventType].Remove(eventDel);
     }
     /// <summary>
-    /// Å×³öÊÂ¼ş
+    /// æŠ›å‡ºäº‹ä»¶
     /// </summary>
     /// <param name="eventType"></param>
     /// <param name="e"></param>

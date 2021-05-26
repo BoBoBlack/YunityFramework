@@ -3,16 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// Á·Ï°Ä£Ê½ÊµÑéÈÎÎñĞÅÏ¢
+/// ç»ƒä¹ æ¨¡å¼å®éªŒä»»åŠ¡ä¿¡æ¯
 /// </summary>
 [Serializable]
 public class PractiseTaskInfo
 {
-    public int ExperimentId = -1;               // ÊµÑéId
-    public string ExperimentName = "";          // ÊµÑéÃû³Æ
-    public List<PractiseTaskStepInfo> StepSetList = null;       // ¸ÃÊµÑéÏÂÊôµÄÈÎÎñ¼¯
+    public int ExperimentId = -1;               // å®éªŒId
+    public string ExperimentName = "";          // å®éªŒåç§°
+    public List<PractiseTaskStepInfo> StepSetList = null;       // è¯¥å®éªŒä¸‹å±çš„ä»»åŠ¡é›†
 
-    public bool IsExperimentSuccess = false;    // ÊµÑéÊÇ·ñÍê³É
+    public bool IsExperimentSuccess = false;    // å®éªŒæ˜¯å¦å®Œæˆ
 
-    public int CurStepIndex = -1;               // µ±Ç°Ö´ĞĞµÄÈÎÎñµÄË÷Òı
+    public int CurStepIndex = -1;               // å½“å‰æ‰§è¡Œçš„ä»»åŠ¡çš„ç´¢å¼•
 }

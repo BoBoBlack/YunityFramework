@@ -3,73 +3,73 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// ÊµÑéÈÎÎñ±íÊı¾İ½á¹¹
+/// ä»»åŠ¡æ­¥éª¤æ•°æ®ç»“æ„
 /// </summary>
 [Serializable]
 public class TaskTableInfo
 {
     /// <summary>
-    /// ÊµÑé±àºÅ
+    /// å®éªŒç¼–å·
     /// </summary>
     public int ExperimentId { get; set; }
     /// <summary>
-    /// ²½ÖèË÷Òı
+    /// æ­¥éª¤ç´¢å¼•
     /// </summary>
     public int StepIndex { get; set; }
     /// <summary>
-    /// ´ó²½Öè±àºÅ
+    /// å¤§æ­¥éª¤ç¼–å·
     /// </summary>
     public int GroupId { get; set; }
     /// <summary>
-    /// ´ó²½ÖèÃû³Æ
+    /// å¤§æ­¥éª¤åç§°
     /// </summary>
     public string GroupName { get; set; }
     /// <summary>
-    /// ²½ÖèÊÂ¼ş±àºÅ
+    /// æ­¥éª¤äº‹ä»¶ç¼–å·
     /// </summary>
     public int StepId { get; set; }
     /// <summary>
-    /// ²½ÖèÃû³Æ
+    /// æ­¥éª¤åç§°
     /// </summary>
     public string StepName { get; set; }
     /// <summary>
-    /// ²½ÖèÍê³É´ÎÊı
+    /// æ­¥éª¤å®Œæˆæ¬¡æ•°
     /// </summary>
     public int StepCount { get; set; }
     /// <summary>
-    /// ¹ØÁªµÄÆ÷²Ä
+    /// å…³è”çš„å™¨æ
     /// </summary>
     public List<StepPropsInfo> AssoProps { get; set; }
     /// <summary>
-    /// °ë½âËøµÄÆ÷²Ä
+    /// åŠè§£é”çš„å™¨æ
     /// </summary>
     public List<StepPropsInfo> HalfUnLockProps { get; set; }
     /// <summary>
-    /// ¸ßÁÁÆ÷²Ä
+    /// é«˜äº®å™¨æ
     /// </summary>
     public List<StepPropsInfo> HighlightProps { get; set; }
     /// <summary>
-    /// ÌáÊ¾ÅİÅİÀàĞÍ
+    /// æç¤ºæ³¡æ³¡ç±»å‹
     /// </summary>
     public TooltipType AssoTipType { get; set; }
     /// <summary>
-    /// ¹ØÁªµÄUIÌáÊ¾ÅİÅİ
+    /// å…³è”çš„UIæç¤ºæ³¡æ³¡
     /// </summary>
     public List<int> AssoTips { get; set; }
     /// <summary>
-    /// ¹ØÁªµÄÆ÷²ÄÌáÊ¾ÅİÅİ
+    /// å…³è”çš„å™¨ææç¤ºæ³¡æ³¡
     /// </summary>
     public List<StepTipsInfo> PropsAssoTips { get; set; }
     /// <summary>
-    /// ¹ØÁªµÄÌáÊ¾ÅİÅİ
+    /// å…³è”çš„æç¤ºæ³¡æ³¡
     /// </summary>
     public List<string> AssoNotices { get; set; }
     /// <summary>
-    /// ¹ØÁªµÄÅÔ°×ÒôĞ§
+    /// å…³è”çš„æ—ç™½éŸ³æ•ˆ
     /// </summary>
     public List<string> AssoSounds { get; set; }
     /// <summary>
-    /// ÅĞ¶Ï²ÎÊı1-4
+    /// åˆ¤æ–­å‚æ•°1-4
     /// </summary>
     public object JudgeParam1 { get; set; }
     public object JudgeParam2 { get; set; }

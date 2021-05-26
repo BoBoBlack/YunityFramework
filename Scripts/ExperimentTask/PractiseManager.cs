@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// Á·Ï°Ä£Ê½¿ØÖÆ
+/// ç»ƒä¹ æ¨¡å¼æ§åˆ¶
 /// </summary>
 public class PractiseManager : QSingleton<PractiseManager>
 {
     /// <summary>
-    /// ±íÖĞ¶ÁÈ¡µ½µÄÈÎÎñ²½ÖèĞÅÏ¢×Öµä
+    /// è¡¨ä¸­è¯»å–åˆ°çš„ä»»åŠ¡æ­¥éª¤ä¿¡æ¯å­—å…¸
     /// </summary>
     public Dictionary<int, List<TaskTableInfo>> ExperimentTaskDic { get; private set; } = new Dictionary<int, List<TaskTableInfo>>();
     /// <summary>
-    /// ÊÇ·ñÊÇÁ·Ï°Ä£Ê½
+    /// æ˜¯å¦æ˜¯ç»ƒä¹ æ¨¡å¼
     /// </summary>
     private bool mIsInPractiseMode = false;
     private int mSoundId = -1;
@@ -20,12 +20,12 @@ public class PractiseManager : QSingleton<PractiseManager>
     public Dictionary<int, string> PraticeGroupPair { get; private set; } = null;
 
     /// <summary>
-    /// ½øÈëÁ·Ï°
+    /// è¿›å…¥ç»ƒä¹ 
     /// </summary>
     /// <param name="expId"></param>
     public void EnterPratice(int expId)
     {
-        // ÅĞ¶ÏÃ»ÓĞÍË³öµÄ»°ÏÈÍË³ö
+        // åˆ¤æ–­æ²¡æœ‰é€€å‡ºçš„è¯å…ˆé€€å‡º
         if (mIsInPractiseMode)
         {
             LeavePratice();
@@ -44,14 +44,14 @@ public class PractiseManager : QSingleton<PractiseManager>
         }
     }
     /// <summary>
-    /// ÍË³öµ±Ç°Á·Ï°ÈÎÎñ
+    /// é€€å‡ºå½“å‰ç»ƒä¹ ä»»åŠ¡
     /// </summary>
     public void LeavePratice()
     {
        
     }
     /// <summary>
-    /// ½ÓÊÜÏûÏ¢ºóµÄ»Øµ÷º¯Êı
+    /// æ¥å—æ¶ˆæ¯åçš„å›è°ƒå‡½æ•°
     /// </summary>
     void OnTaskStep(int eventTypeId, TaskEventArgs e)
     {
@@ -60,7 +60,7 @@ public class PractiseManager : QSingleton<PractiseManager>
     public void LoadCurExperimentTask(int expId)
     {
         if (!ExperimentTaskDic.ContainsKey(expId)) return;
-        // ¶ÁÈ¡Ò»¸öÈÎÎñ±íµÄËùÓĞĞÅÏ¢
+        // è¯»å–ä¸€ä¸ªä»»åŠ¡è¡¨çš„æ‰€æœ‰ä¿¡æ¯
         List<TaskTableInfo> info = ExperimentTaskDic[expId];
 
         if (info == null || info.Count <= 0) return;
@@ -70,6 +70,7 @@ public class PractiseManager : QSingleton<PractiseManager>
         PraticeStepInfo.ExperimentId = expId;
 
     }
+    #region
     public override void Clear()
     {
 
@@ -89,4 +90,5 @@ public class PractiseManager : QSingleton<PractiseManager>
     {
 
     }
+    #endregion
 }

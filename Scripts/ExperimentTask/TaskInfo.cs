@@ -3,29 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// ÈÎÎñÊı¾İ½á¹¹Àà
+/// ä»»åŠ¡æ•°æ®ç»“æ„ç±»
 /// </summary>
 [Serializable]
 public class TaskInfo
 {
     /// <summary>
-    /// ÈÎÎñËùÊôÄ£¿é±àºÅ
+    /// ä»»åŠ¡æ‰€å±æ¨¡å—ç¼–å·
     /// </summary>
     public int TaskModuleId{ get; set; }
     /// <summary>
-    /// ÈÎÎñ±àºÅ
+    /// ä»»åŠ¡ç¼–å·
     /// </summary>
     public int TaskId { get; set; }
     /// <summary>
-    /// ÈÎÎñÃû³Æ
+    /// ä»»åŠ¡åç§°
     /// </summary>
     public string TaskName { get; set; }
     /// <summary>
-    /// ÈÎÎñÍ¼±êÃû³Æ
+    /// ä»»åŠ¡å›¾æ ‡åç§°
     /// </summary>
     public string TaskIconName { get; set; }
     /// <summary>
-    /// ÈÎÎñÄÚÈİ
+    /// ä»»åŠ¡å†…å®¹
     /// </summary>
     public string TaskContent { get; set; }
 

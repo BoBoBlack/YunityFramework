@@ -3,30 +3,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// Á·Ï°Ä£Ê½ÊµÑéÈÎÎñ²½ÖèÊı¾İ½á¹¹
+/// ç»ƒä¹ æ¨¡å¼å®éªŒä»»åŠ¡æ­¥éª¤æ•°æ®ç»“æ„
 /// </summary>
 [Serializable]
 public class PractiseTaskStepInfo
 {
-    public int StepIndex = -1;                  // ²½ÖèË÷Òı
-    public int GroupId = -1;                    // ´ó²½Öè±àºÅ
-    public string GroupName = "";               // ´ó²½ÖèÃû³Æ
-    public int StepId = -1;                     // ²½ÖèÊÂ¼ş±àºÅ
-    public string StepName = "";                // ²½ÖèÃû³Æ
-    public int StepCount = 0;                   // ²½ÖèÖ´ĞĞ´ÎÊı
+    public int StepIndex = -1;                  // æ­¥éª¤ç´¢å¼•
+    public int GroupId = -1;                    // å¤§æ­¥éª¤ç¼–å·
+    public string GroupName = "";               // å¤§æ­¥éª¤åç§°
+    public int StepId = -1;                     // æ­¥éª¤äº‹ä»¶ç¼–å·
+    public string StepName = "";                // æ­¥éª¤åç§°
+    public int StepCount = 0;                   // æ­¥éª¤æ‰§è¡Œæ¬¡æ•°
 
-    public TooltipType AssoTipType = TooltipType.NONE;      // ÊµÑé¹ØÁªÅİÅİÀàĞÍ
-    public List<int> AssoTips = null;                       // ¹ØÁªµÄUIÌáÊ¾ÅİÅİ
-    public List<StepTipsInfo> PropsAssoTips = null;         // ÊµÑéÆ÷²Ä¹ØÁªÅİÅİ
-    public List<string> AssoNotices = null;                 // ²½ÖèÌáÊ¾ÄÚÈİ;
-    public List<string> AssoSounds = null;                  // ÊµÑé¹ØÁªÒôĞ§
+    public TooltipType AssoTipType = TooltipType.NONE;      // å®éªŒå…³è”æ³¡æ³¡ç±»å‹
+    public List<int> AssoTips = null;                       // å…³è”çš„UIæç¤ºæ³¡æ³¡
+    public List<StepTipsInfo> PropsAssoTips = null;         // å®éªŒå™¨æå…³è”æ³¡æ³¡
+    public List<string> AssoNotices = null;                 // æ­¥éª¤æç¤ºå†…å®¹;
+    public List<string> AssoSounds = null;                  // å®éªŒå…³è”éŸ³æ•ˆ
 
-    public object JudgeParam1 = null;           // ÅĞ¶Ï²ÎÊı1-4
+    public object JudgeParam1 = null;           // åˆ¤æ–­å‚æ•°1-4
     public object JudgeParam2 = null;
     public object JudgeParam3 = null;
     public object JudgeParam4 = null;
 
-    public int CurStepCount = 0;                // µ±Ç°²½ÖèÖ´ĞĞ´ÎÊı
+    public int CurStepCount = 0;                // å½“å‰æ­¥éª¤æ‰§è¡Œæ¬¡æ•°
 
-    public bool IsStepSuccess { get => CurStepCount != 0 && CurStepCount >= StepCount; } // ²½ÖèÊÇ·ñÍê³É
+    public bool IsStepSuccess { get => CurStepCount != 0 && CurStepCount >= StepCount; } // æ­¥éª¤æ˜¯å¦å®Œæˆ
 }

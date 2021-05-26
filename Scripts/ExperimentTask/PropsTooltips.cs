@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// 任务提示数据结构
+/// 浠诲姟鎻愮ず鏁版嵁缁撴瀯
 /// </summary>
 [Serializable]
 public class PropsTooltips

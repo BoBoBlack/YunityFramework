@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 /// <summary>
-/// »ù´¡½»»¥Àà
+/// åŸºç¡€äº¤äº’ç±»
 /// </summary>
 public class InteractableElement : BaseElement
 {
@@ -55,56 +55,56 @@ public class InteractableElement : BaseElement
     }
 
     /// <summary>
-    /// Êó±êÒÆÈë
+    /// é¼ æ ‡ç§»å…¥
     /// </summary>
     public virtual void OnInteractEnter() { }
     /// <summary>
-    /// Êó±êÍ£Áô
+    /// é¼ æ ‡åœç•™
     /// </summary>
     public virtual void OnInteractStay() { }
     /// <summary>
-    /// Êó±êÒÆ³ö
+    /// é¼ æ ‡ç§»å‡º
     /// </summary>
     public virtual void OnInteractExit() { }
 
     /// <summary>
-    /// Êó±ê°´ÏÂ-×ó¼ü
+    /// é¼ æ ‡æŒ‰ä¸‹-å·¦é”®
     /// </summary>
     public virtual void OnInteractDown_Left() { }
     /// <summary>
-    /// Êó±ê°´ÏÂ-ÓÒ¼ü
+    /// é¼ æ ‡æŒ‰ä¸‹-å³é”®
     /// </summary>
     public virtual void OnInteractDown_Right() { }
 
     /// <summary>
-    /// Êó±êÌ§Æğ-×ó¼ü
+    /// é¼ æ ‡æŠ¬èµ·-å·¦é”®
     /// </summary>
     public virtual void OnInteractUp_Left() { }
     /// <summary>
-    /// Êó±êÌ§Æğ-ÓÒ¼ü
+    /// é¼ æ ‡æŠ¬èµ·-å³é”®
     /// </summary>
     public virtual void OnInteractUp_Right() { }
 
     /// <summary>
-    /// Êó±êµã»÷-×ó¼ü
+    /// é¼ æ ‡ç‚¹å‡»-å·¦é”®
     /// </summary>
     public virtual void OnInteractClick_Left() { }
     /// <summary>
-    /// Êó±êµã»÷-ÓÒ¼ü
+    /// é¼ æ ‡ç‚¹å‡»-å³é”®
     /// </summary>
     public virtual void OnInteractClick_Right() { }
 
     /// <summary>
-    /// Êó±êÍÏ×§-×ó¼ü
+    /// é¼ æ ‡æ‹–æ‹½-å·¦é”®
     /// </summary>
     public virtual void OnInteractDrag_Left() { }
     /// <summary>
-    /// Êó±êÍÏ×§-ÓÒ¼ü
+    /// é¼ æ ‡æ‹–æ‹½-å³é”®
     /// </summary>
     public virtual void OnInteractDrag_Right() { }
 
     /// <summary>
-    /// Êó±ê¹öÂÖ»¬¶¯
+    /// é¼ æ ‡æ»šè½®æ»‘åŠ¨
     /// </summary>
     /// <param name="scroll"></param>
     public virtual void OnInteractScroll(float scroll) { }

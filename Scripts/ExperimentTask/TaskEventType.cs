@@ -1,9 +1,11 @@
-
+/// <summary>
+/// äº‹ä»¶å‚æ•°ç±»å‹
+/// </summary>
 public enum TaskEventType
 {
-    ParamNone,//²»´ø²ÎÊı
-    ParamOne,//Ò»¸ö²ÎÊı
-    ParamTwo,//Á½¸ö²ÎÊı
-    ParamThree,//Èı¸ö²ÎÊı
-    ParamFour//ËÄ¸ö²ÎÊı
+    ParamNone,//ä¸å¸¦å‚æ•°
+    ParamOne,//ä¸€ä¸ªå‚æ•°
+    ParamTwo,//ä¸¤ä¸ªå‚æ•°
+    ParamThree,//ä¸‰ä¸ªå‚æ•°
+    ParamFour//å››ä¸ªå‚æ•°
 }

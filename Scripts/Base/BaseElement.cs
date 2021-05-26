@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// »ù´¡ÔªËØÀà
+/// åŸºç¡€å…ƒç´ ç±»
 /// </summary>
 public class BaseElement : BaseMonoBehaviour
 {

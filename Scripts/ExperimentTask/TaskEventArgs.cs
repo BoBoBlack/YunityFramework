@@ -3,22 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// ÈÎÎñÏûÏ¢²ÎÊıÀà
+/// ä»»åŠ¡æ¶ˆæ¯å‚æ•°ç±»
 /// </summary>
 public class TaskEventArgs : EventArgs
 {
-    public GameObject Sender { get; set; } = null;      // ·¢ËÍÕß
-    public int CorrectEventId { get; set; } = 0;      // ÕıÈ·ÊÂ¼şµÄId
+    public GameObject Sender { get; set; } = null;      // å‘é€è€…
+    public int CorrectEventId { get; set; } = 0;      // æ­£ç¡®äº‹ä»¶çš„Id
 
-    public object Param1 { get; set; } = null;          // ²ÎÊı1
-    public object Param2 { get; set; } = null;          // ²ÎÊı2
-    public object Param3 { get; set; } = null;          // ²ÎÊı3
-    public object Param4 { get; set; } = null;          // ²ÎÊı4
+    public object Param1 { get; set; } = null;          // å‚æ•°1
+    public object Param2 { get; set; } = null;          // å‚æ•°2
+    public object Param3 { get; set; } = null;          // å‚æ•°3
+    public object Param4 { get; set; } = null;          // å‚æ•°4
 
     public TaskEventArgs()
     {
     }
-    #region ´øÌî³ä²ÎÊıµÄ¹¹Ôìº¯Êı
+    #region å¸¦å¡«å……å‚æ•°çš„æ„é€ å‡½æ•°
     public TaskEventArgs(GameObject sender)
     {
         Sender = sender;

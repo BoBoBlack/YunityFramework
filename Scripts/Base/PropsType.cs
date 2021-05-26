@@ -1,5 +1,5 @@
 /// <summary>
-/// 实验器材中类
+/// 瀹為獙鍣ㄦ潗涓被
 /// </summary>
 public enum PropsType
 {

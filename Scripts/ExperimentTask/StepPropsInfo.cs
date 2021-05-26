@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// ²½ÖèÆ÷²ÄÊı¾İ½á¹¹
+/// æ­¥éª¤å™¨ææ•°æ®ç»“æ„
 /// </summary>
 public struct StepPropsInfo
 {
+
     /// <summary>
-    /// Æ÷²ÄÖÖÀà
+    /// å™¨æç§ç±»
     /// </summary>
     public PropsType mPropsType;
     /// <summary>
-    /// ÔÚÍ¬ÀàÆ÷²ÄÖĞµÄË÷Òı
+    /// åœ¨åŒç±»å™¨æä¸­çš„ç´¢å¼•
     /// </summary>
     public int mIndex;
 }
